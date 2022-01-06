@@ -1,4 +1,6 @@
 from operator import itemgetter
+
+
 def sort_employees(employees, sort_by):
     if sort_by == "name":
         return sorted(employees, key=itemgetter(0))

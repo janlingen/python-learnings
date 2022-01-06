@@ -24,4 +24,4 @@ while int(guess) != rand_num:
 if attempts > 1:
     print(f"You guessed the number in {attempts} attempts")
 else:
- print(f"You guessed the number in {attempts} attempt")
+    print(f"You guessed the number in {attempts} attempt")

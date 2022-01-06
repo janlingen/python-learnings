@@ -5,4 +5,3 @@ def pairs_sum_to_target(list1, list2, target):
             if list1[x] + list2[y] == target:
                 result.append([x, y])
     return result
-    

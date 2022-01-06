@@ -5,8 +5,8 @@ def create_strings_from_characters(frequencies, string1, string2):
                 return False
         return True
     if freq_check(frequencies, string1+string2):
-        return 2 
-    elif freq_check(frequencies,string1) or freq_check(frequencies,string2):
+        return 2
+    elif freq_check(frequencies, string1) or freq_check(frequencies, string2):
         return 1
     else:
         return 0

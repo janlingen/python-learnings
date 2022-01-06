@@ -9,6 +9,7 @@ def flatten_lists(func):
         return func(*lst)
     return wrapper
 
+
 def convert_strings_to_ints(func):
     def wrapper(*args):
         lst = []
@@ -20,6 +21,7 @@ def convert_strings_to_ints(func):
         return func(*lst)
     return wrapper
 
+
 def filter_integers(func):
     def wrapper(*args):
         lst = []
@@ -28,7 +30,8 @@ def filter_integers(func):
                 lst.append(i)
         return func(*lst)
     return wrapper
-    
+
+
 @flatten_lists
 @convert_strings_to_ints
 @filter_integers

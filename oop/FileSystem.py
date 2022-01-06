@@ -12,7 +12,6 @@ class FileSystem:
         else:
             raise ValueError("Dir already exists")
 
-
     def create_file(self, path, contents):
         FileSystem._validate_path(path)
         dirs = path[1:].split("/")
@@ -58,7 +57,7 @@ class FileSystem:
 
     def __str__(self):
         return f"*** FileSystem ***\n" + self.root.__str__() + "\n***"
-    
+
     @staticmethod
     def _validate_path(path):
         if not path.startswith("/"):
@@ -71,6 +70,7 @@ class FileSystem:
                 raise ValueError("Not a Directory or not found.")
             curr_node = curr_node.children[name]
         return curr_node
+
 
 class Node:
     def __init__(self, name):
@@ -124,5 +124,3 @@ def indent(string, number_of_spaces):
     lines = string.split("\n")
     indented_lines = [spaces + line for line in lines]
     return "\n".join(indented_lines)
-
-                

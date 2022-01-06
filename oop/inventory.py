@@ -10,7 +10,6 @@ class Inventory:
         self.item_count += quantity
         self.items[name] = [name, price, quantity]
         return True
-        
 
     def delete_item(self, name):
         if name not in self.items:
@@ -25,7 +24,6 @@ class Inventory:
             if min_price <= item[1] <= max_price:
                 lst.append(item[0])
         return lst
-
 
     def get_most_stocked_item(self):
         max_item_name = None

@@ -1,5 +1,6 @@
 import random as r
 
+
 class Deck:
     suits = ["H", "D", "C", "S"]
     values = [str(i) for i in range(2, 11)] + ["J", "Q", "K", "A"]
@@ -12,10 +13,10 @@ class Deck:
 
     def __len__(self):
         return len(self.cards)
-        
+
     def shuffle(self):
         r.shuffle(self.cards)
-    
+
     def deal(self, n):
         if n > len(self.cards):
             return self.cards
@@ -28,7 +29,7 @@ class Deck:
 
     def get_cards(self):
         return self.cards.copy()
-    
+
     def contains(self, card):
         return card in self.cards
 
@@ -45,4 +46,3 @@ class Deck:
             cards_by_suit["C"] +
             cards_by_suit["S"]
         )
-                
