@@ -20,5 +20,3 @@ frameworks:
 - pandas
 - matplotlib
 
-libraries:
-- 
